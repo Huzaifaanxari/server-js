@@ -7,6 +7,9 @@ import schoolRoutes from './routes/schoolRoutes.mjs';
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
+app.get('/hello', (req, res) => {
+    res.send('Welcome User!')
+})
 
 // /posts/23
 app.get('/posts/:id', (req, res) => {
